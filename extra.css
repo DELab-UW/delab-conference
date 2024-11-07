@@ -54,14 +54,14 @@ html {
 }
 
 [data-md-color-scheme="delab"] {
-  --md-primary-fg-color:        #3B5676;
-  --md-accent-fg-color:         #3B5676;
-  --md-accent-bg-color:         #3B5676;
-  --md-code-hl-color:           #3B5676;
+  --md-primary-fg-color:        #422B6F;
+  --md-accent-fg-color:         #422B6F;
+  --md-accent-bg-color:         #422B6F;
+  --md-code-hl-color:           #422B6F;
 }
 
 [data-md-color-scheme="delab"] footer {
-  background-color: #3B5676;
+  background-color: #422B6F;
   color: white; /* Możesz zmienić kolor tekstu, aby był czytelny */
 }
 
@@ -71,7 +71,7 @@ html {
 [data-md-color-scheme="delab"] h4,
 [data-md-color-scheme="delab"] h5,
 [data-md-color-scheme="delab"] h6 {
-  color: #3B5676; /* Zmienia kolor nagłówków na czarny */
+  color: #422B6F; /* Zmienia kolor nagłówków na czarny */
 }
 
 .md-typeset .admonition,
