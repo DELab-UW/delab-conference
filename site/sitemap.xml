@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mydomain.org/mysite/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/automatyzacja/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/metodologia/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/referencje/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/szkolenia_potrzeba/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/uwagi/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/wnioski/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/wstep/</loc>
+         <lastmod>2024-11-06</lastmod>
+    </url>
+</urlset>

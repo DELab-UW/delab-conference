@@ -1,0 +1,66 @@
+site_name: Motywacje szkoleniowe w gospodarce cyfrowej
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  logo: assets/delab_icon.png
+  favicon: assets/delab_flavicon1.png
+  plugins:
+    - typeset
+    - search
+
+  features:
+    - navigation.instant
+    - navigation.footer
+    - header.autohide
+    - search.highlight 
+    - search.share
+    - search.suggest
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+  
+  language: pl 
+
+  palette:
+    scheme: delab
+    accent: blue
+  
+  font:
+    text: Open Sans
+
+extra_css: 
+  - extra.css
+
+nav:
+  - Krótko o badaniu: "index.md"
+  - Wstęp: "wstep.md"
+  - Automatyzacja pracy a potrzeba szkoleń: "szkolenia_potrzeba.md"
+  - Jakie czynniki kształtują podejmowanie decyzji o szkoleniach?: "automatyzacja.md"
+  - Wnioski: "wnioski.md"
+  - Metodologia badawcza i bazy danych: "metodologia.md"
+  - Uwagi: "uwagi.md"
+  - Referencje: "referencje.md"
+
+markdown_extensions:
+  - toc:
+      title: Na tej stronie
+  - pymdownx.details
+  - admonition
+  - pymdownx.superfences
+
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/solid/d
+      link: https://delab.uw.edu.pl/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/delabuw/mycompany/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/delabuw/?e=74fefe54-4de4-4c14-a4bd-c3e42ef26d65&g=5
+    - icon: simple/youtube
+      link: https://www.youtube.com/channel/UCuImpIgqCAqa-H0KMCJXfGw
+    - icon: simple/x
+      link: https://x.com/DELabUW
+    - icon: simple/facebook
+      link: https://www.facebook.com/DELabUW
