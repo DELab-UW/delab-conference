@@ -180,15 +180,15 @@ h1.custom-header-title {
 
 /* Styl dla ikon w kształcie koła */
 .tools-timeline-item img {
-  width: 60px;
-  height: 60px;
+  width: 60px !important; /* Wymuszenie szerokości */
+  height: 60px; /* Utrzymanie stałej wysokości */
   border-radius: 50%;
   background-color: #ffffff;
   border: 2px solid #422B6F;
   padding: 5px;
-  display: inline-block; /* Upewnia się, że element działa jako blok w liniach */
   object-fit: cover;
-  box-sizing: border-box; /* Uwzględnia padding w szerokości/wysokości */
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 /* Zamiast rely on, override any problematic 'img' class size properties */
