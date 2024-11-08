@@ -13,6 +13,10 @@
          <lastmod>2024-11-08</lastmod>
     </url>
     <url>
+         <loc>https://mydomain.org/mysite/index_home/</loc>
+         <lastmod>2024-11-08</lastmod>
+    </url>
+    <url>
          <loc>https://mydomain.org/mysite/index_old/</loc>
          <lastmod>2024-11-08</lastmod>
     </url>
@@ -26,10 +30,6 @@
     </url>
     <url>
          <loc>https://mydomain.org/mysite/old_o_edih/</loc>
-         <lastmod>2024-11-08</lastmod>
-    </url>
-    <url>
-         <loc>https://mydomain.org/mysite/program_edih/</loc>
          <lastmod>2024-11-08</lastmod>
     </url>
     <url>

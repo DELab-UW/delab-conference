@@ -219,3 +219,8 @@ img {
 .md-sidebar--primary {
   display: none; /* Ukrywa lewą nawigację */
 }
+
+
+.md-content {
+  margin-left: 0; /* Rozciąga główną treść na pełną szerokość */
+}
