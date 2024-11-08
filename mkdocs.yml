@@ -1,9 +1,10 @@
-site_name: Motywacje szkoleniowe w gospodarce cyfrowej
+site_name: EDIH w DELab UW
 site_url: https://mydomain.org/mysite
 theme:
   name: material
-  logo: assets/delab_icon.png
-  favicon: assets/delab_flavicon1.png
+  custom_dir: overrides
+  logo: assets/wama_fav.png
+  favicon: assets/wama.png
   plugins:
     - typeset
     - search
@@ -19,6 +20,11 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - navigation.footer
+  #  - navigation.tabs
+    - navigation.indexes
+    - navigation.sections
+
   
   language: pl 
 
@@ -27,24 +33,23 @@ theme:
     accent: blue
   
   font:
-    text: Open Sans
+    text: Roboto
 
 extra_css: 
   - extra.css
 
 nav:
-  - Krótko o badaniu: "index.md"
-  - Wstęp: "wstep.md"
-  - Automatyzacja pracy a potrzeba szkoleń: "szkolenia_potrzeba.md"
-  - Jakie czynniki kształtują podejmowanie decyzji o szkoleniach?: "automatyzacja.md"
-  - Wnioski: "wnioski.md"
-  - Metodologia badawcza i bazy danych: "metodologia.md"
-  - Uwagi: "uwagi.md"
-  - Referencje: "referencje.md"
+  - Home: "index.md"
+  - Program EDIH: "program_edih.md"
+  - O EDIH: "edih.md"
+  - Praca w EDIH: "narzedzia.md"
+  - FAQ: "dzialania.md"
+  - Kontakt: "kontakt.md"
+  - Nasz zespół: "zespol.md"
 
 markdown_extensions:
   - toc:
-      title: Na tej stronie
+      title: Menu
   - pymdownx.details
   - admonition
   - pymdownx.superfences

@@ -1,0 +1,97 @@
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  {{ super() }}
+
+  <!-- Additional styles for landing page -->
+  <style>
+
+    /* Application header should be static for the landing page */
+    .md-header {
+      position: initial;
+    }
+
+    /* Remove spacing, as we cannot hide it completely */
+    .md-main__inner {
+      margin: 0;
+    }
+
+    /* Hide main content for now */
+    .md-content {
+      display: none;
+    }
+
+    /* Hide table of contents */
+    @media screen and (min-width: 60em) {
+      .md-sidebar--secondary {
+        display: none;
+      }
+    }
+
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    }
+
+    .mdx-container {
+      padding: 0; /* Usuń marginesy lub paddingi, aby obraz wypełniał całą szerokość */
+    }
+
+  </style>
+
+  <!-- Hero for landing page -->
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+
+        <!-- Hero image -->
+        <div class="mdx-hero__image">
+          <img
+            src="/EDIH-delab/assets/banner1.png"
+            alt=""
+            width=100%
+            height=auto
+            draggable="false"
+          >
+        </div>
+
+        <!-- Hero content -->
+        <div class="mdx-hero__content">
+          <h1><strong>Odkryj możliwości z EDIH</strong></h1>
+          <p class="subheading">Wsparcie dla Twojej firmy w pełnym wykorzystaniu potencjału cyfryzacji.</p>
+          <a
+            href="{{ page.next_page.url | url }}"
+            title="{{ page.next_page.title | e }}"
+            class="md-button md-button--primary"
+          >
+            Wejście
+          </a>
+          <a
+            href="kontakt/"
+            title="Formularz kontaktowy"
+            class="md-button"
+          >
+            Skontaktuj się z nami
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+<h2>Dlaczego wybrać Material for MkDocs?</h2>
+<p>Oferujemy szybkie i proste rozwiązania dla dokumentacji technicznej.</p>
+{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}
+<footer>
+    <p>Powered by MkDocs Material.</p>
+</footer>
+  
+{% endblock %}

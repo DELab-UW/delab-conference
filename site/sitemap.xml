@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mydomain.org/mysite/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <lastmod>2024-11-08</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/automatyzacja/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <loc>https://mydomain.org/mysite/dzialania/</loc>
+         <lastmod>2024-11-08</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/metodologia/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <loc>https://mydomain.org/mysite/edih/</loc>
+         <lastmod>2024-11-08</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/referencje/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <loc>https://mydomain.org/mysite/index_old/</loc>
+         <lastmod>2024-11-08</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/szkolenia_potrzeba/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <loc>https://mydomain.org/mysite/kontakt/</loc>
+         <lastmod>2024-11-08</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/uwagi/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <loc>https://mydomain.org/mysite/narzedzia/</loc>
+         <lastmod>2024-11-08</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/wnioski/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <loc>https://mydomain.org/mysite/old_o_edih/</loc>
+         <lastmod>2024-11-08</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/wstep/</loc>
-         <lastmod>2024-11-07</lastmod>
+         <loc>https://mydomain.org/mysite/program_edih/</loc>
+         <lastmod>2024-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/zespol/</loc>
+         <lastmod>2024-11-08</lastmod>
     </url>
 </urlset>
