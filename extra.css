@@ -179,8 +179,8 @@ h1.custom-header-title {
 }
 
 .tools-timeline-item img {
-  width: 80px;
-  height: 80px;
+  width: 60px; /* Stała szerokość dla wszystkich ikon */
+  height: 60px; /* Stała wysokość dla wszystkich ikon */
 }
 
 .tools-content-box {
