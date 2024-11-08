@@ -169,6 +169,8 @@ h1.custom-header-title {
   white-space: normal; /* Zawijanie tekstu */
 }
 
+
+
 /* Styl dla sekcji timeline w narzędziach */
 .tools-timeline-item {
   display: flex;
@@ -177,8 +179,8 @@ h1.custom-header-title {
 }
 
 .tools-timeline-item img {
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
 }
 
 .tools-content-box {
