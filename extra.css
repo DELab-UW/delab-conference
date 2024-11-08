@@ -186,9 +186,14 @@ h1.custom-header-title {
   background-color: #ffffff;
   border: 2px solid #422B6F;
   padding: 5px;
+  display: inline-block; /* Upewnia się, że element działa jako blok w liniach */
   object-fit: cover;
-  display: inline-block; /* Zmieniamy block na inline-block */
-  aspect-ratio: 1; /* Ustaw proporcje 1:1 dla koła */
+  box-sizing: border-box; /* Uwzględnia padding w szerokości/wysokości */
+}
+
+/* Zamiast rely on, override any problematic 'img' class size properties */
+img {
+  max-width: none; /* Przełamuje domyślne skalowanie */
 }
 
 /* Styl dla pudełek tekstowych */
@@ -199,4 +204,5 @@ h1.custom-header-title {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   gap: 1rem;
 }
+
 
