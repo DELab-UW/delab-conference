@@ -216,3 +216,6 @@ img {
 }
 
 
+.md-sidebar--primary {
+  display: none; /* Ukrywa lewą nawigację */
+}
