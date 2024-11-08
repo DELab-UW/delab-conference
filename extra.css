@@ -149,7 +149,7 @@ h1.custom-header-title {
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  width: 300px; /* Stała szerokość karty */
+  width: 400px; /* Stała szerokość karty */
   height: 400px; /* Stała wysokość karty */
   display: flex;
   flex-direction: column;
@@ -161,14 +161,14 @@ h1.custom-header-title {
 .timeline-item img {
   width: 64px;
   height: 100px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Nagłówki */
 .timeline-item h3 {
   color: #422B6F;
   font-size: 1.2rem; /* Stały rozmiar czcionki nagłówka */
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 /* Tekst w kartach */
@@ -182,6 +182,6 @@ h1.custom-header-title {
 
 /* Ograniczenie wysokości tekstu, aby wszystko mieściło się w karcie */
 .timeline-item p {
-  max-height: 6.5rem; /* Dostosuj maksymalną wysokość tekstu do swojej treści */
+  max-height: 6rem; /* Dostosuj maksymalną wysokość tekstu do swojej treści */
   white-space: normal; /* Zawijanie tekstu */
 }
