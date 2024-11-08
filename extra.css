@@ -171,24 +171,30 @@ h1.custom-header-title {
 
 
 
-/* Styl dla sekcji timeline w narzędziach */
+/* Kontener dla elementów timeline */
 .tools-timeline-item {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
+/* Styl dla ikon w kształcie koła */
 .tools-timeline-item img {
   width: 60px; /* Stała średnica koła */
   height: 60px; /* Stała średnica koła */
   border-radius: 50%; /* Przekształcenie w koło */
-  background-color: #f1f1f1; /* Opcjonalne: kolor tła dla ikon */
-  object-fit: contain; /* Upewnij się, że obraz dobrze pasuje */
+  background-color: #ffffff; /* Tło koła (możesz zmienić na inne) */
+  border: 2px solid #422B6F; /* Opcjonalna obwódka */
+  padding: 5px; /* Odstęp wewnętrzny, aby ikona lepiej pasowała */
+  object-fit: cover; /* Dopasowanie obrazu do koła */
+  display: block;
 }
 
+/* Styl dla pudełek tekstowych */
 .tools-content-box {
   background-color: #f8f8f8;
   padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
