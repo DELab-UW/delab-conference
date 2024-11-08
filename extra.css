@@ -124,23 +124,6 @@ h1.custom-header-title {
   color: #ffffff;
 }
 
-.timeline-item {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.timeline-item img {
-  width: 48px;
-  height: 48px;
-}
-
-.timeline-item div {
-  background-color: #f8f8f8;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 /* Kontener karty */
 .timeline-item {
@@ -184,4 +167,23 @@ h1.custom-header-title {
 .timeline-item p {
   max-height: 6rem; /* Dostosuj maksymalną wysokość tekstu do swojej treści */
   white-space: normal; /* Zawijanie tekstu */
+}
+
+/* Styl dla sekcji timeline w narzędziach */
+.tools-timeline-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tools-timeline-item img {
+  width: 48px;
+  height: 48px;
+}
+
+.tools-content-box {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
