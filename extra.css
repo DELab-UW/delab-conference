@@ -191,6 +191,16 @@ h1.custom-header-title {
   box-sizing: border-box;
 }
 
+.icon-in-title {
+  width: 30px; /* Ustaw stały rozmiar ikon */
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff; /* Opcjonalne tło koła */
+  border: 2px solid #422B6F; /* Obwódka */
+  padding: 3px;
+  object-fit: cover;
+}
+
 /* Zamiast rely on, override any problematic 'img' class size properties */
 img {
   max-width: none; /* Przełamuje domyślne skalowanie */
