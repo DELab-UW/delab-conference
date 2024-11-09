@@ -25,6 +25,7 @@ theme:
     - navigation.indexes
     - navigation.sections
 
+  footer: #FunduszeUE
   
   language: pl 
 
@@ -39,13 +40,7 @@ extra_css:
   - extra.css
 
 nav:
-  - Home: "index.md"
-  - Program EDIH: "program_edih.md"
-  - O EDIH: "edih.md"
-  - Praca w EDIH: "narzedzia.md"
-  - FAQ: "dzialania.md"
-  - Kontakt: "kontakt.md"
-  - Nasz zespół: "zespol.md"
+  - Program EDIH: "index.md"
 
 markdown_extensions:
   - toc:
