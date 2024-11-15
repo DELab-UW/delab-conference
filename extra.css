@@ -215,8 +215,72 @@ img {
   gap: 1rem;
 }
 
+/* Znikają obie nawigacje i hanburger wyczyszczony */
+/*.md-sidebar__scrollwrap { 
+  display: none; 
+}*/
 
-.md-sidebar--primary {
-  display: none; /* Ukrywa lewą nawigację */
+/* Ukrywa lewą nawigację - znika hamburger*/
+/*.md-sidebar--primary {
+  display: none; 
+} */
+
+/* Ukrywa boczny pasek - nic się nie zmienia */
+/*.md-sidebar--secondary {
+  display: none; 
+}*/
+
+/* Usuwa margines po prawej stronie - nic się nie zmienia*/
+/*.md-main {
+  margin-right: 0; 
+}*/
+
+/*.md-content {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}*/
+
+
+/*.md-main__inner.md-grid {
+  max-width: initial;
+}*/
+
+/* Maximum space for text block */
+/*.md-grid {
+  max-width: initial; 
+}*/
+/* or 100%, if you want to stretch to full-width */
+
+/* Ukryj boczne nawigacje na dużych ekranach */
+/* Ukryj boczne nawigacje i rozciągnij treść na dużych ekranach */
+@media screen and (min-width: 1024px) {
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    display: none;
+  }
+
+  .md-main__inner {
+    grid-template-columns: 1fr !important; /* Rozciągnij treść */
+  }
+
+  .md-content {
+    max-width: 100%; /* Rozciągnij treść na całą szerokość */
+    width: 100%;
+    margin: 0;
+  }
+
+  .md-main {
+    padding: 0; /* Usuń padding, jeśli jest */
+    margin: 0 auto; /* Wyrównaj treść */
+  }
+
+  .md-container {
+    max-width: 100%; /* Rozciągnij całą sekcję na całą szerokość strony */
+    width: 100%;
+  }
 }
+
+/* Na mniejszych ekranach (np. poniżej 1024px) przywróć boczne paski */
+@med
 
