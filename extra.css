@@ -295,7 +295,7 @@ img {
 label.md-header__button.md-icon::before {
   content: '';
   display: inline-block;
-  background-image: url('assets/delab_icon.png'); /* Wskaż swoją ikonę */
+  background-image: url('assets/menu.png'); /* Wskaż swoją ikonę */
   background-size: contain;
   width: 24px;
   height: 24px;
