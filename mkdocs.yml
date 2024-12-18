@@ -1,19 +1,16 @@
-site_name: EDIH w DELab UW
+site_name: GenAI in Higher Education Conference
 site_url: https://mydomain.org/mysite
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/wama_fav.png
+  logo: assets/delab_icon.png
 
-  favicon: assets/wama.png
+  favicon: assets/delab_icon.png
 
   features:
     - navigation.instant
     - navigation.footer
     - header.autohide
-    - search.highlight 
-    - search.share
-    - search.suggest
     - navigation.indexes
     - navigation.sections
     - navigation.top
@@ -42,18 +39,14 @@ theme:
 
 plugins:
   - tags
-  - search
-#  - frontmatter
 
 extra_css: 
   - extra.css
 
 
 nav:
-  - O programie EDIH: "index.md"
-  - FAQ: "faq.md"
-  - Zespół: "zespol.md"
-  - Kontakt: "kontakt.md"
+  - Home: "index.md"
+  - O konferencji: "dane.md"
 
 markdown_extensions:
   - toc:
@@ -80,4 +73,5 @@ extra:
 
 
 copyright: |
-  <span style="font-size: 150%; margin-bottom: 25px;"><b>#FunduszeUE</b></span>
+  <span style="font-size: 150%; margin-bottom: 25px;"><b>#FunduszeUE</b></span><br>
+  <a href="https://www.flaticon.com" title="stress and anxiety icons">Icons created by kornkun, gravisio - Flaticon</a>

@@ -260,27 +260,26 @@ img {
     display: none;
   }
 
-  .md-main__inner {
+ .md-main__inner {
     grid-template-columns: 1fr !important; /* Rozciągnij treść */
   }
 
-  .md-content {
+ .md-content {
     max-width: 100%; /* Rozciągnij treść na całą szerokość */
     width: 100%;
     margin: 0;
   }
 
-  .md-main {
+ .md-main {
     padding: 0; /* Usuń padding, jeśli jest */
     margin: 0 auto; /* Wyrównaj treść */
   }
 
-  .md-container {
+ .md-container {
     max-width: 100%; /* Rozciągnij całą sekcję na całą szerokość strony */
     width: 100%;
   }
 }
 
-/* Na mniejszych ekranach (np. poniżej 1024px) przywróć boczne paski */
-@med
+
 
