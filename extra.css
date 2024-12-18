@@ -54,15 +54,15 @@ html {
 }
 
 [data-md-color-scheme="delab"] {
-  --md-primary-fg-color:        #422B6F;
-  --md-accent-fg-color:         #422B6F;
-  --md-accent-bg-color:         #422B6F;
-  --md-code-hl-color:           #422B6F;
+  --md-primary-fg-color:        white;
+  --md-accent-fg-color:         #308DC5;
+  --md-accent-bg-color:         #308DC5;
+  --md-code-hl-color:           #308DC5;
 }
 
 [data-md-color-scheme="delab"] footer {
-  background-color: #422B6F;
-  color: white; /* Możesz zmienić kolor tekstu, aby był czytelny */
+  background-color: white;
+  color: #308DC5; /* Możesz zmienić kolor tekstu, aby był czytelny */
 }
 
 [data-md-color-scheme="delab"] h1,
@@ -71,20 +71,30 @@ html {
 [data-md-color-scheme="delab"] h4,
 [data-md-color-scheme="delab"] h5,
 [data-md-color-scheme="delab"] h6 {
-  color: #422B6F; /* Zmienia kolor nagłówków na czarny */
+  color: #308DC5; /* Zmienia kolor nagłówków na czarny */
 }
 
-/*
-.md-typeset .admonition,
-.md-typeset details {
-  border-color: #422B6F;
+/* Zmiana koloru tytułu strony */
+.md-header__title {
+  color: #308DC5; /* Wybierz kolor, np. niebieski */
 }
 
-.md-typeset .admonition-title,
-.md-typeset summary {
-  background-color: #3485c82d;
+/* Ustawienie koloru dla zakładek */
+[data-md-color-scheme="delab"] .md-tabs__link {
+  color: #308DC5 !important; /* Twój kolor wybrany */
 }
-*/
+
+/* Zmiana koloru aktywnej zakładki */
+[data-md-color-scheme="delab"] .md-tabs__item--active .md-tabs__link {
+  color: #308DC5 !important; /* Kolor aktywnej zakładki */
+  font-weight: bold; /* Pogrubienie aktywnej zakładki */
+}
+
+/* Zmiana koloru zakładki po najechaniu */
+[data-md-color-scheme="delab"] .md-tabs__link:hover {
+  color: #308DC5 !important; /* Kolor po najechaniu */
+}
+
 
 h1.custom-header-title {
   margin-top: 20px;
@@ -282,4 +292,16 @@ img {
 }
 
 
+label.md-header__button.md-icon::before {
+  content: '';
+  display: inline-block;
+  background-image: url('assets/delab_icon.png'); /* Wskaż swoją ikonę */
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
 
+/* Ukryj oryginalne SVG */
+label.md-header__button.md-icon svg {
+  display: none;
+}
