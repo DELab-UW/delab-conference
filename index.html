@@ -69,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#wez-udzia-w-konferencji-i-stan-sie-czescia-rewolucji-w-nauce-i-edukacji" class="md-skip">
+          Przejdź do treści
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -193,6 +198,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -224,8 +231,158 @@
 
 
 <p><img src="./assets/banner_conf.png" alt="delab photo" style="width: 100vw; height: auto; object-fit: cover; display: block; margin: 0; padding: 0;"></p>
-<h1 style="margin-top: 80px; margin-bottom: 20px; text-align: center; font-size: 220%;">
-</h1>
+<!-- Sekcja lokalizacji -->
+<div class="location-container">
+    <span class="location-icon">
+        <!-- Ikona lokalizacji (np. Font Awesome lub inna) -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 0 24 24" width="45" fill="#888888">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+        </svg>
+    </span>
+    <span class="location-text">Uniwersytet Warszawski, Wydział Neofilologii Warszawa, ul. Dobra 55</span>
+</div>
+
+<p><br></p>
+<h1 id="wez-udzia-w-konferencji-i-stan-sie-czescia-rewolucji-w-nauce-i-edukacji">Weź udział w konferencji i stań się częścią rewolucji w nauce i edukacji!</h1>
+<div class="info-button-container">
+    <a href="https://link-do-formularza-rejestracji.com" class="info-button">
+        Zarejestruj się teraz
+    </a>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        /* Stylizacja sekcji odliczania */
+        .countdown-container {
+            text-align: center;
+            background-color: #fff;
+            color: grey;
+            padding: 20px 20px;
+            font-family: Poppins;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .countdown-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .countdown-timer div {
+            text-align: center;
+        }
+
+        .countdown-timer span {
+            display: block;
+            font-size: 2em;
+            color: #2c84c9; /* Akcent - czerwony */
+        }
+
+        .countdown-label {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            color: #BFBFBF;
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown-container">
+        <div class="countdown-title">Konferencja rozpocznie się już za:</div>
+        <div class="countdown-timer">
+            <div>
+                <span id="days">0</span>
+                <div class="countdown-label">Dni</div>
+            </div>
+            <div>
+                <span id="hours">0</span>
+                <div class="countdown-label">Godziny</div>
+            </div>
+            <div>
+                <span id="minutes">0</span>
+                <div class="countdown-label">Minuty</div>
+            </div>
+            <div>
+                <span id="seconds">0</span>
+                <div class="countdown-label">Sekundy</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Funkcja odliczania
+        function countdown() {
+            const eventDate = new Date("May 29, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+
+            // Jeśli czas minął
+            if (timeLeft < 0) {
+                clearInterval(timer);
+                document.querySelector(".countdown-title").textContent = "Konferencja już się rozpoczęła!";
+                document.querySelector(".countdown-timer").style.display = "none";
+            }
+        }
+
+        // Uruchomienie odliczania
+        const timer = setInterval(countdown, 1000);
+        countdown();
+    </script>
+</body>
+</html>
+
+<style>
+/* Stylowanie kontenera dla przycisku */
+.info-button-container {
+    text-align: center; /* Wyśrodkowanie przycisku */
+    margin-top: 30px; /* Dodanie większej przestrzeni nad przyciskiem */
+}
+
+/* Stylowanie przycisku */
+.info-button {
+    background-color: #155B83; /* Ciemnoniebieski kolor przycisku */
+    color: #FFFFFF; /* Biały tekst */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    padding: 15px 30px; /* Większe wewnętrzne odstępy */
+    border-radius: 50px; /* Mocno zaokrąglone rogi */
+    font-size: 1.3em; /* Większy rozmiar tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    display: inline-block; /* Blokowy styl dla stylizacji */
+    transition: all 0.3s ease; /* Płynna animacja na hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień */
+}
+
+/* Efekt hover na przycisku */
+.info-button:hover {
+    background-color: #0D3E5C; /* Jeszcze ciemniejszy niebieski przy najechaniu */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Większy cień przy hover */
+    transform: translateY(-2px); /* Subtelne uniesienie przycisku */
+    color: #FFFFFF; /* Utrzymanie białego tekstu */
+}
+</style>
 
 
 

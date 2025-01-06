@@ -305,3 +305,32 @@ label.md-header__button.md-icon::before {
 label.md-header__button.md-icon svg {
   display: none;
 }
+
+
+/* Wymuszenie białego tekstu na przycisku */
+.info-button {
+  background-color: #155B83; /* Ciemnoniebieski kolor przycisku */
+  color: #FFFFFF !important; /* Wymuszenie białego tekstu */
+  text-decoration: none; /* Usunięcie podkreślenia */
+  padding: 15px 30px; /* Większe wewnętrzne odstępy */
+  border-radius: 50px; /* Mocno zaokrąglone rogi */
+  font-size: 1.3em; /* Większy rozmiar tekstu */
+  font-weight: bold; /* Pogrubienie tekstu */
+  display: inline-block; /* Blokowy styl dla stylizacji */
+  transition: all 0.3s ease; /* Płynna animacja na hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień */
+}
+
+/* Hover z ciemnoniebieskim kolorem */
+.info-button:hover {
+  background-color: #0D3E5C; /* Ciemniejszy niebieski przy najechaniu */
+  color: #FFFFFF !important; /* Wymuszenie białego tekstu przy hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Większy cień przy hover */
+  transform: translateY(-2px); /* Subtelne uniesienie przycisku */
+}
+
+.location-text {
+  font-style: bold; /* Kursywa */
+  font-size: 1.2em; /* Zwiększony rozmiar */
+  color: #555555; /* Ciemniejszy szary */
+}
