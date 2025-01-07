@@ -645,22 +645,18 @@
         // Pobierz wszystkie bloki z dniami
         const days = document.querySelectorAll('.agenda-day');
         const schedules = document.querySelectorAll('.agenda-schedule');
-
         // Funkcja zmieniająca aktywny dzień
         function setActiveDay(dayId) {
             // Usuń klasę 'active' ze wszystkich dni
             days.forEach(day => day.classList.remove('active'));
             // Usuń klasę 'active' ze wszystkich harmonogramów
             schedules.forEach(schedule => schedule.classList.remove('active'));
-
             // Dodaj klasę 'active' do wybranego dnia i harmonogramu
             document.querySelector(`[data-day="${dayId}"]`).classList.add('active');
             document.getElementById(dayId).classList.add('active');
         }
-
         // Domyślnie ustaw aktywny "Dzień 1"
         setActiveDay('day1');
-
         // Dodaj zdarzenie kliknięcia dla każdego dnia
         days.forEach(day => {
             day.addEventListener('click', () => {
