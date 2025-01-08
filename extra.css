@@ -349,7 +349,7 @@ label.md-header__button.md-icon svg {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Dopasowanie elementów w pionie do góry */
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding: 10px;
   border-bottom: 1px solid #ddd;
   gap: 10px; /* Większy odstęp między kolumnami */
