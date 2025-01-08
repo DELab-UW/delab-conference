@@ -363,7 +363,7 @@ label.md-header__button.md-icon svg {
 /* Prawa strona wydarzenia */
 .event-right {
   width: 60%; /* Ustal stałą szerokość prawej strony */
-  font-size: 1em;
+  font-size: 1.1em;
   color: #555;
   line-height: 1.4;
   margin-top: -10px; /* Opcjonalne przesunięcie */

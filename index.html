@@ -121,34 +121,6 @@
   </nav>
   
     
-      
-<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
-        
-  
-    
-  
-  Start
-
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-    
   
 </header>
     
@@ -168,12 +140,10 @@
                     
 
 
-  
-
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="GenAI in Higher Education Conference" class="md-nav__button md-logo" aria-label="GenAI in Higher Education Conference" data-md-component="logo">
       
@@ -268,12 +238,10 @@
             max-width: 600px;
             margin: 20px auto;
         }
-
         .countdown-title {
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-
         .countdown-timer {
             display: flex;
             justify-content: center;
@@ -281,17 +249,14 @@
             font-size: 1.2em;
             font-weight: bold;
         }
-
         .countdown-timer div {
             text-align: center;
         }
-
         .countdown-timer span {
             display: block;
             font-size: 2em;
             color: #2c84c9; /* Akcent - czerwony */
         }
-
         .countdown-label {
             font-size: 0.8em;
             text-transform: uppercase;
@@ -379,12 +344,13 @@
 }
 </style>
 
+<p><br></p>
 <!-- Opis -->
 <p><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></p>
 <div class="about-section">
 
 <!-- Nagłówek sekcji -->
-<h2 class="about-title">O konferencji GenAI w edukacji wyższej</h2>
+<div class="about-title">O konferencji GenAI w edukacji wyższej</div>
     <p class="about-text">
         Poznaj możliwości generatywnej sztucznej inteligencji w edukacji i nauce! Konferencja GenAI to miejsce, gdzie liderzy, badacze i praktycy spotykają się, aby omówić przyszłość technologii AI w kształtowaniu dydaktyki i badań naukowych.
     </p>
@@ -450,8 +416,9 @@
 .about-title {
     text-align: center;
     font-size: 1.8em;
-    color: #333333;
+    color: #2c84c9;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 /* Opis sekcji */
@@ -520,7 +487,7 @@
         /* Kontener główny agendy */
         .agenda-container {
             text-align: center;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 10px;
             font-family: Poppins, sans-serif;
@@ -542,7 +509,7 @@
             transition: all 0.3s ease;
         }
         .agenda-day.active {
-            background-color: #2c84c9;
+            background-color: #2c85c993;
             color: #fff;
         }
         /* Harmonogram */
@@ -572,12 +539,15 @@
         .event-time {
             font-weight: bold;
             color: #555;
+            margin-top: -5px;
         }
         .event-title {
             color: #333;
-            margin-top: 5px;
-        }
+            margin-top: 10px;
+            font-weight: bold;
+            margin-bottom: 15px;}
     </style>
+
 </head>
 <body>
     <div class="agenda-container">
@@ -598,7 +568,9 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-time">9:00-10:00</div>
-                    <div class="event-title">Otwarcie konferencji</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                        <span>Główna aula 0.410</span>
+                    <div class="event-title">Otwarcie konferencji</div> 
                 </div>
                 <div class="event-right">
                     <p>Uroczyste przemówienie JM rektora<br>Wystąpienia ministrów<br>Wystąpienie Dyrektor DELab UW</p>
@@ -607,6 +579,8 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-time">10:00-11:00</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                        <span>Główna aula 0.410</span>
                     <div class="event-title">Keynote Speech</div>
                 </div>
                 <div class="event-right">
@@ -628,8 +602,15 @@
                     <div class="event-title">Sesje równoległe</div>
                 </div>
                 <div class="event-right">
-                    <p><b>Nauka i Badania</b><br>Tematy: New research paradigms in the digital era<br><br>
-                    <b>Dydaktyka</b><br>Tematy: New educational approaches in the digital era</p>
+                    <p><b>Nauka i Badania</b><br>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                        <span>Sala: 1.132</span><br>Temat: New research paradigms in the digital era<br><br>
+                    <br><b>Dydaktyka</b><br><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                        <span>Sala: 1.138</span><br>Temat: New educational approaches in the digital era</p>
+                    <br>
+                    <p><b>Otoczenie uczelni</b><br>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                        <span>Sala: 1.128</span><br>Temat: New patterns of collaboration in digital era <br>
                 </div>
             </div>
             <div class="event">
@@ -647,8 +628,10 @@
                     <div class="event-title">Warsztaty</div>
                 </div>
                 <div class="event-right">
-                    <p>Tematy: Automatyzacja procesów badawczych<br><br>
-                    Tematy: Włączanie nowych narzędzi cyfrowych w procesy dydaktyczne</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span>Sala: 1.132</span><br>
+                    Temat: Automatyzacja procesów badawczych<br><br>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span>Sala: 1.132</span><br>
+                    Temat: Włączanie nowych narzędzi cyfrowych w procesy dydaktyczne
                 </div>
             </div>
             <div class="event">
@@ -663,15 +646,17 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-time">16:00 - 17:30</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span>Główna aula 0.410</span>
                     <div class="event-title">Panel Dyskusyjny</div>
                 </div>
                 <div class="event-right">
-                    <p>Tematy: Towards new research and education ecosystem in academia</p>
+                    <p>Temat: Towards new research and education ecosystem in academia</p>
                 </div>
             </div>
             <div class="event">
                 <div class="event-left">
                     <div class="event-time">19:00-22:00</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span>Sale Muzeum Uniwersytetu Warszawskiego</span>
                     <div class="event-title"> </div>
                 </div>
                 <div class="event-right">
@@ -687,8 +672,9 @@
                     <div class="event-title">Sesje równoległe</div>
                 </div>
                 <div class="event-right">
-                    <p><b>Nauka i Badania</b><br>Tematy: Przyszłość publikacji naukowych<br><br>
-                    <b>Dydaktyka</b><br>Tematy: Innowacyjne metody nauczania</p>
+                    <p><b>Nauka i Badania</b><br><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span>Sala: 1.132</span><br>Temat: Przyszłość publikacji naukowych<br><br>
+                    <b>Dydaktyka</b><br><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span>Sala: 1.138</span><br>Temat: Innowacyjne metody nauczania</p><br>
+                    <b>Praktyki i Wymiana Wiedzy</b><br><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg><span>Sala: 1.128</span><br>Prezentacje sponsorów i praktyków</p>
                 </div>
             </div>
             <div class="event">
@@ -706,8 +692,11 @@
                     <div class="event-title">Warsztaty</div>
                 </div>
                 <div class="event-right">
-                    <p>Tematy: Wykorzystanie AI w nauce<br><br>
-                    Tematy: Nowe technologie w dydaktyce</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    <span>Sala: 1.132</span><br>Wykorzystanie AI w nauce<br><br>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    <span>Sala: 1.138</span><br>
+                    Nowe technologie w dydaktyce
                 </div>
             </div>
             <div class="event">
@@ -722,15 +711,19 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-time">13:30 - 15:00</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    <span>Główna aula 0.410</span><br>
                     <div class="event-title">Panel Dyskusyjny</div>
                 </div>
                 <div class="event-right">
-                    <p>Tematy: Przyszłość edukacji wyższej</p>
+                    <p>Temat: Przyszłość edukacji wyższej</p>
                 </div>
             </div>
             <div class="event">
                 <div class="event-left">
                     <div class="event-time">15:00 - 15:30</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16" fill="#bbb" style="vertical-align: middle; margin-right: 5px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    <span>Główna aula 0.410</span><br>
                     <div class="event-title">Zamknięcie Konferencji</div>
                 </div>
                 <div class="event-right">
@@ -897,7 +890,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.footer", "header.autohide", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.sections", "navigation.tabs.sticky", "toc.integrate"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.footer", "header.autohide", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.tabs.sticky", "toc.integrate"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}}</script>
     
     
       <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
