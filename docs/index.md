@@ -1,5 +1,5 @@
 
-<img src="./assets/banner_conf.png" alt="delab photo" style="width: 100vw; height: auto; object-fit: cover; display: block; margin: 0; padding: 0;">
+<img src="./assets/baner_en.png" alt="delab photo" style="width: 100vw; height: auto; object-fit: cover; display: block; margin: 0; padding: 0;">
 
 
 <!-- Sekcja lokalizacji -->
@@ -22,9 +22,15 @@
 
 <!-- Przycisk rejestracji-->
 <div class="info-button-container">
-    <a href="https://link-do-formularza-rejestracji.com" class="info-button">
+    <!-- Przycisk rejestracji -->
+    <a href="#register" class="info-button">
         <span class="lang-pl">Zarejestruj się teraz</span>
         <span class="lang-en hidden">Register now</span>
+    </a>
+    <!-- Przycisk Call for Papers -->
+    <a href="#call" class="info-button">
+        <span class="lang-pl">Call for papers</span>
+        <span class="lang-en hidden">Call for papers</span>
     </a>
 </div>
 
@@ -727,7 +733,7 @@
             const scheduleButton = document.createElement('button');
             scheduleButton.id = 'scheduleButton';
             scheduleButton.className = 'schedule-button';
-            scheduleButton.textContent = 'Harmonogram';
+            scheduleButton.textContent = 'Schedule';
 
             // Stylizacja przycisku Harmonogramu
             scheduleButton.style.marginRight = '10px';
@@ -742,6 +748,30 @@
             // Dodanie funkcji przewijania do przycisku Harmonogramu
             scheduleButton.addEventListener('click', () => {
                 const target = document.getElementById('harmonogram');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+
+            // Tworzenie przycisku Lokalizacji
+            const locationButton = document.createElement('button');
+            locationButton.id = 'locationButton';
+            locationButton.className = 'location-button';
+            locationButton.textContent = 'Location';
+
+            // Stylizacja przycisku Lokalizacji
+            locationButton.style.marginRight = '10px';
+            locationButton.style.backgroundColor = '#f0f0f0';
+            locationButton.style.color = '#333';
+            locationButton.style.border = 'none';
+            locationButton.style.padding = '8px 16px';
+            locationButton.style.borderRadius = '4px';
+            locationButton.style.cursor = 'pointer';
+            locationButton.style.fontSize = '14px';
+
+            // Dodanie funkcji przewijania do przycisku Lokalizacji
+            locationButton.addEventListener('click', () => {
+                const target = document.getElementById('call');
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth' });
                 }
@@ -781,23 +811,46 @@
             switchButton.style.alignItems = 'center'; // Wyśrodkowanie ikony
 
             // Dodanie przycisków do headera
-            headerInner.appendChild(scheduleButton); // Dodaj przycisk Harmonogram po lewej stronie
-            headerInner.appendChild(switchButton); // Dodaj przycisk zmiany języka po prawej stronie
+            headerInner.appendChild(scheduleButton); // Dodaj przycisk Harmonogram
+            headerInner.appendChild(locationButton); // Dodaj przycisk Lokalizacja
+            headerInner.appendChild(switchButton); // Dodaj przycisk zmiany języka
 
             // Logika przełączania języka
             const polishTexts = document.querySelectorAll('.lang-pl');
             const englishTexts = document.querySelectorAll('.lang-en');
-            let isEnglish = false; // Flaga języka
+            let isEnglish = true; // Flaga języka
+
+            // Ustaw początkowy stan języka
+            polishTexts.forEach(text => text.classList.toggle('hidden', isEnglish));
+            englishTexts.forEach(text => text.classList.toggle('hidden', !isEnglish));
+
 
             switchButton.addEventListener('click', () => {
                 isEnglish = !isEnglish; // Przełącz flagę języka
                 polishTexts.forEach(text => text.classList.toggle('hidden', isEnglish));
                 englishTexts.forEach(text => text.classList.toggle('hidden', !isEnglish));
-                scheduleButton.textContent = isEnglish ? 'Schedule' : 'Harmonogram'; // Zmień tekst przycisku Harmonogramu
+                scheduleButton.textContent = isEnglish ? 'Schedule':'Harmonogram'; // Zmień tekst przycisku Harmonogramu
+                locationButton.textContent = isEnglish ? 'Location':'Lokalizacja';
             });
         }
     });
 </script>
 
 
+<br><br>
 
+<h1 id="call" style="margin-top: 50px;">
+    <span class="lang-pl"><b>Call for papers</b></span>
+    <span class="lang-en hidden"><b>Call for papers</b></span></h1>
+
+
+
+<br><br>
+
+<h1 id="location" style="margin-top: 50px; margin-bottom:50px;">
+    <span class="lang-pl"><b>Szczegóły lokalizacji</b></span>
+    <span class="lang-en hidden"><b>Location details</b></span></h1>
+
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4663.501770262157!2d21.0202136!3d52.2417561!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc5c1509e0dd%3A0x82c92afcf5ab31!2sFaculty%20of%20Modern%20Languages%20%E2%80%8B%E2%80%8Bat%20the%20University%20of%20Warsaw!5e1!3m2!1sen!2spl!4v1736941097058!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
