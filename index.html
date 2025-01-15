@@ -914,7 +914,7 @@
             const scheduleButton = document.createElement('button');
             scheduleButton.id = 'scheduleButton';
             scheduleButton.className = 'schedule-button';
-            scheduleButton.textContent = 'Harmonogram';
+            scheduleButton.textContent = 'Schedule';
 
             // Stylizacja przycisku Harmonogramu
             scheduleButton.style.marginRight = '10px';
@@ -938,7 +938,7 @@
             const locationButton = document.createElement('button');
             locationButton.id = 'locationButton';
             locationButton.className = 'location-button';
-            locationButton.textContent = 'Lokalizacja';
+            locationButton.textContent = 'Location';
 
             // Stylizacja przycisku Lokalizacji
             locationButton.style.marginRight = '10px';
@@ -999,14 +999,19 @@
             // Logika przełączania języka
             const polishTexts = document.querySelectorAll('.lang-pl');
             const englishTexts = document.querySelectorAll('.lang-en');
-            let isEnglish = false; // Flaga języka
+            let isEnglish = true; // Flaga języka
+
+            // Ustaw początkowy stan języka
+            polishTexts.forEach(text => text.classList.toggle('hidden', isEnglish));
+            englishTexts.forEach(text => text.classList.toggle('hidden', !isEnglish));
+
 
             switchButton.addEventListener('click', () => {
                 isEnglish = !isEnglish; // Przełącz flagę języka
                 polishTexts.forEach(text => text.classList.toggle('hidden', isEnglish));
                 englishTexts.forEach(text => text.classList.toggle('hidden', !isEnglish));
-                scheduleButton.textContent = isEnglish ? 'Schedule' : 'Harmonogram'; // Zmień tekst przycisku Harmonogramu
-                locationButton.textContent = isEnglish ? 'Location' : 'Lokalizacja';
+                scheduleButton.textContent = isEnglish ? 'Schedule':'Harmonogram'; // Zmień tekst przycisku Harmonogramu
+                locationButton.textContent = isEnglish ? 'Location':'Lokalizacja';
             });
         }
     });
