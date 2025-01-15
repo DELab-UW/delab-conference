@@ -18,7 +18,7 @@
     
     
       
-        <title>GenAI in Higher Education Conference</title>
+        <title>GenAI Conference</title>
       
     
     
@@ -81,7 +81,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Nagłówek">
-    <a href="." title="GenAI in Higher Education Conference" class="md-header__button md-logo" aria-label="GenAI in Higher Education Conference" data-md-component="logo">
+    <a href="." title="GenAI Conference" class="md-header__button md-logo" aria-label="GenAI Conference" data-md-component="logo">
       
   <img src="assets/delab_icon.png" alt="logo">
 
@@ -94,7 +94,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            GenAI in Higher Education Conference
+            GenAI Conference
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -140,12 +140,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Nawigacja" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="GenAI in Higher Education Conference" class="md-nav__button md-logo" aria-label="GenAI in Higher Education Conference" data-md-component="logo">
+    <a href="." title="GenAI Conference" class="md-nav__button md-logo" aria-label="GenAI Conference" data-md-component="logo">
       
   <img src="assets/delab_icon.png" alt="logo">
 
     </a>
-    GenAI in Higher Education Conference
+    GenAI Conference
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -934,6 +934,30 @@
                 }
             });
 
+            // Tworzenie przycisku Lokalizacji
+            const locationButton = document.createElement('button');
+            locationButton.id = 'locationButton';
+            locationButton.className = 'location-button';
+            locationButton.textContent = 'Lokalizacja';
+
+            // Stylizacja przycisku Lokalizacji
+            locationButton.style.marginRight = '10px';
+            locationButton.style.backgroundColor = '#f0f0f0';
+            locationButton.style.color = '#333';
+            locationButton.style.border = 'none';
+            locationButton.style.padding = '8px 16px';
+            locationButton.style.borderRadius = '4px';
+            locationButton.style.cursor = 'pointer';
+            locationButton.style.fontSize = '14px';
+
+            // Dodanie funkcji przewijania do przycisku Lokalizacji
+            locationButton.addEventListener('click', () => {
+                const target = document.getElementById('call');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+
             // Tworzenie przycisku do zmiany języka
             const switchButton = document.createElement('button');
             switchButton.id = 'languageSwitch';
@@ -968,8 +992,9 @@
             switchButton.style.alignItems = 'center'; // Wyśrodkowanie ikony
 
             // Dodanie przycisków do headera
-            headerInner.appendChild(scheduleButton); // Dodaj przycisk Harmonogram po lewej stronie
-            headerInner.appendChild(switchButton); // Dodaj przycisk zmiany języka po prawej stronie
+            headerInner.appendChild(scheduleButton); // Dodaj przycisk Harmonogram
+            headerInner.appendChild(locationButton); // Dodaj przycisk Lokalizacja
+            headerInner.appendChild(switchButton); // Dodaj przycisk zmiany języka
 
             // Logika przełączania języka
             const polishTexts = document.querySelectorAll('.lang-pl');
@@ -981,6 +1006,7 @@
                 polishTexts.forEach(text => text.classList.toggle('hidden', isEnglish));
                 englishTexts.forEach(text => text.classList.toggle('hidden', !isEnglish));
                 scheduleButton.textContent = isEnglish ? 'Schedule' : 'Harmonogram'; // Zmień tekst przycisku Harmonogramu
+                locationButton.textContent = isEnglish ? 'Location' : 'Lokalizacja';
             });
         }
     });
@@ -997,7 +1023,7 @@
     <span class="lang-en hidden"><b>Location details</b></span></h1>
 
 <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4663.501770262157!2d21.0202136!3d52.2417561!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc5c1509e0dd%3A0x82c92afcf5ab31!2sFaculty%20of%20Modern%20Languages%20%E2%80%8B%E2%80%8Bat%20the%20University%20of%20Warsaw!5e1!3m2!1sen!2spl!4v1736941097058!5m2!1sen!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4663.501770262157!2d21.0202136!3d52.2417561!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc5c1509e0dd%3A0x82c92afcf5ab31!2sFaculty%20of%20Modern%20Languages%20%E2%80%8B%E2%80%8Bat%20the%20University%20of%20Warsaw!5e1!3m2!1sen!2spl!4v1736941097058!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 
