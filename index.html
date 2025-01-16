@@ -219,10 +219,10 @@
         <span class="lang-en hidden">Register now</span>
     </a>
     <!-- Przycisk Call for Papers -->
-    <a href="#call" class="info-button">
+    <button class="info-button" id="callForAbstractsButton">
         <span class="lang-pl">Call for abstracts</span>
         <span class="lang-en hidden">Call for abstracts</span>
-    </a>
+    </button>
 </div>
 
 <!-- Timer -->
@@ -927,7 +927,8 @@
             scheduleButton.style.fontSize = '14px';
 
             // Dodanie funkcji przewijania do przycisku Harmonogramu
-            scheduleButton.addEventListener('click', () => {
+            scheduleButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Zapobiega propagacji zdarzeń
                 const target = document.getElementById('harmonogram');
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth' });
@@ -1002,8 +1003,8 @@
             let isEnglish = true; // Flaga języka
 
             // Ustaw początkowy stan języka
-            polishTexts.forEach(text => text.classList.toggle('hidden', isEnglish));
-            englishTexts.forEach(text => text.classList.toggle('hidden', !isEnglish));
+            polishTexts.forEach(text => text.classList.add('hidden'));
+            englishTexts.forEach(text => text.classList.remove('hidden'));
 
 
             switchButton.addEventListener('click', () => {
@@ -1217,6 +1218,20 @@
         width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 </div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Funkcja przewijania do sekcji
+    const callForAbstractsButton = document.getElementById('callForAbstractsButton');
+    callForAbstractsButton.addEventListener('click', () => {
+        const target = document.getElementById('call'); // Identyfikator sekcji Call for abstracts
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' }); // Płynne przewijanie do sekcji
+        }
+    });
+});
+</script>
 
 
 
