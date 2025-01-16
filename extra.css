@@ -530,4 +530,70 @@ label.md-header__button.md-icon svg {
   display: none;
 }
 
+.about-text-call {
+  font-weight: bold;
+}
+
+.topic-content-class {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+    .info-button {
+        background-color: #155B83; /* Domyślny kolor */
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-size: 1.3em;
+        font-weight: bold;
+        display: inline-block;
+        transition: all 0.3s ease;
+        margin: 0 10px;
+    }
+
+    .info-button:hover {
+        background-color: #0D3E5C; /* Kolor przy hover */
+    }
+
+    /* Styl dla zablokowanego przycisku */
+    .info-button.disabled {
+        background-color: #cccccc; /* Szary kolor */
+        color: #666666; /* Przygaszony tekst */
+        cursor: not-allowed; /* Ikona zablokowania */
+        pointer-events: none; /* Wyłącza klikanie */
+    }
+
+    .info-button.disabled:hover {
+        background-color: #cccccc; /* Bez zmiany koloru przy hover */
+        color: #666666;
+    }
+
+
+    .map-container {
+        display: flex; /* Ustawia układ flexbox */
+        gap: 20px; /* Odstęp między mapą a zdjęciem */
+        align-items: center; /* Wyśrodkowanie elementów w pionie */
+        justify-content: center; /* Wyśrodkowanie całego kontenera */
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .map-container iframe {
+        flex: 1; /* Mapka zajmuje tyle miejsca, ile jest dostępne */
+        max-width: 600px; /* Maksymalna szerokość mapy */
+        height: 450px; /* Stała wysokość mapy */
+    }
+
+    .map-image {
+      flex: none; /* Wyłącza automatyczne dostosowywanie rozmiaru zdjęcia */
+      width: 450px; /* Szerokość zdjęcia */
+      height: auto; /* Zachowuje proporcje zdjęcia */
+      border-radius: 10px; /* Zaokrąglone rogi zdjęcia */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień */
+      object-fit: cover; /* Dopasowuje zdjęcie do kontenera */
+  }
+  
+
 
