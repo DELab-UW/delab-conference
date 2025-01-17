@@ -372,6 +372,7 @@ label.md-header__button.md-icon svg {
 /* Tytuł wydarzenia */
 .event-title {
   font-size: 1.1em;
+  margin-bottom: 20px;
 }
 
 
@@ -505,9 +506,9 @@ label.md-header__button.md-icon svg {
 }
 .event-title {
   color: #333;
-  margin-top: 10px;
+  margin-top: 2px;
   font-weight: bold;
-  margin-bottom: 15px;}
+  margin-bottom: 35px;}
 
 
 .language-switch {
