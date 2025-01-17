@@ -597,7 +597,8 @@ label.md-header__button.md-icon svg {
   }
   
 
-  .center-title {
+.center-title {
     text-align: center;
+    font-size: 10em;
 }
 
