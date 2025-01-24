@@ -28,7 +28,7 @@ theme:
     accent: blue
   
   font:
-    text: Poppins
+    text: Barlow
   
   hide:
     - toc

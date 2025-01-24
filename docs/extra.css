@@ -34,7 +34,7 @@ html {
   left: 1.5em; /* Dopasuj szerokość od lewej */
 }
 
-/* Dodatkowo możesz dodać media queries, aby dopasować rozmiar logo na mniejszych ekranach */
+/* media queries, aby dopasować rozmiar logo na mniejszych ekranach */
 @media screen and (max-width: 768px) {
   .custom-header-image {
       max-width: 50%; /* Zmniejsz rozmiar logo na mniejszych ekranach */
@@ -55,14 +55,14 @@ html {
 
 [data-md-color-scheme="delab"] {
   --md-primary-fg-color:        white;
-  --md-accent-fg-color:         #308DC5;
-  --md-accent-bg-color:         #308DC5;
-  --md-code-hl-color:           #308DC5;
+  --md-accent-fg-color:         #034A76;
+  --md-accent-bg-color:         #034A76;
+  --md-code-hl-color:           #034A76;
 }
 
 [data-md-color-scheme="delab"] footer {
   background-color: white;
-  color: #308DC5; /* Możesz zmienić kolor tekstu, aby był czytelny */
+  color: #034A76; /* Możesz zmienić kolor tekstu, aby był czytelny */
 }
 
 [data-md-color-scheme="delab"] h1,
@@ -71,67 +71,33 @@ html {
 [data-md-color-scheme="delab"] h4,
 [data-md-color-scheme="delab"] h5,
 [data-md-color-scheme="delab"] h6 {
-  color: #308DC5; /* Zmienia kolor nagłówków na czarny */
+  color: #034A76; /* Zmienia kolor nagłówków na czarny */
 }
 
 /* Zmiana koloru tytułu strony */
 .md-header__title {
-  color: #308DC5; /* Wybierz kolor, np. niebieski */
+  color: #034A76; /* Wybierz kolor, np. niebieski */
 }
 
 /* Ustawienie koloru dla zakładek */
 [data-md-color-scheme="delab"] .md-tabs__link {
-  color: #308DC5 !important; /* Twój kolor wybrany */
+  color: #034A76 !important; /* Twój kolor wybrany */
 }
 
 /* Zmiana koloru aktywnej zakładki */
 [data-md-color-scheme="delab"] .md-tabs__item--active .md-tabs__link {
-  color: #308DC5 !important; /* Kolor aktywnej zakładki */
+  color: #034A76 !important; /* Kolor aktywnej zakładki */
   font-weight: bold; /* Pogrubienie aktywnej zakładki */
 }
 
 /* Zmiana koloru zakładki po najechaniu */
 [data-md-color-scheme="delab"] .md-tabs__link:hover {
-  color: #308DC5 !important; /* Kolor po najechaniu */
+  color: #034A76 !important; /* Kolor po najechaniu */
 }
 
 
 h1.custom-header-title {
   margin-top: 20px;
-}
-
-
-/* Stylizacja dla admonition "program" */
-.md-typeset .admonition.program {
-  border-color: #01B1E9; /* Fioletowa ramka */
-  background-color: #F2F2F2; /* Jasny fiolet dla tła */
-}
-
-.md-typeset .admonition.program .admonition-title {
-  background-color: #F2F2F2; /* Ciemniejszy fiolet dla tytułu */
-  color: #ffffff;
-}
-
-/* Stylizacja dla admonition "actions" */
-.md-typeset .admonition.actions {
-  border-color: #01B1E9; /* Niebieska ramka */
-  background-color: #F2F2F2; /* Jasny niebieski dla tła */
-}
-
-.md-typeset .admonition.actions .admonition-title {
-  background-color: #F2F2F2; /* Ciemniejszy niebieski dla tytułu */
-  color: #ffffff;
-}
-
-/* Stylizacja dla admonition "mission" */
-.md-typeset .admonition.mission {
-  border-color: #01B1E9; /* Zielona ramka */
-  background-color: #F2F2F2; /* Jasny zielony dla tła */
-}
-
-.md-typeset .admonition.mission .admonition-title {
-  background-color: #F2F2F2; /* Ciemniejszy zielony dla tytułu */
-  color: #ffffff;
 }
 
 
@@ -150,66 +116,6 @@ h1.custom-header-title {
   box-sizing: border-box; /* Uwzględnia padding w wysokości */
 }
 
-/* Ikony */
-.timeline-item img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 0.5rem;
-}
-
-/* Nagłówki */
-.timeline-item h3 {
-  color: #422B6F;
-  font-size: 1.2rem; /* Stały rozmiar czcionki nagłówka */
-  margin-bottom: 0.3rem;
-}
-
-/* Tekst w kartach */
-.timeline-item p {
-  font-size: 0.8rem; /* Stały rozmiar czcionki dla wszystkich kart */
-  line-height: 1.5; /* Spójne odstępy między wierszami */
-  margin: 0; /* Brak dodatkowych marginesów */
-  overflow: hidden; /* Zapobiega przewijaniu */
-  display: block; /* Utrzymanie spójnego układu */
-}
-
-/* Ograniczenie wysokości tekstu, aby wszystko mieściło się w karcie */
-.timeline-item p {
-  max-height: 6rem; /* Dostosuj maksymalną wysokość tekstu do swojej treści */
-  white-space: normal; /* Zawijanie tekstu */
-}
-
-
-
-/* Kontener dla elementów timeline */
-.tools-timeline-item {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-/* Styl dla ikon w kształcie koła */
-.tools-timeline-item img {
-  width: 60px !important; /* Wymuszenie szerokości */
-  height: 60px; /* Utrzymanie stałej wysokości */
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #422B6F;
-  padding: 5px;
-  object-fit: cover;
-  display: inline-block;
-  box-sizing: border-box;
-}
-
-.icon-in-title {
-  width: 30px; /* Ustaw stały rozmiar ikon */
-  height: 30px;
-  border-radius: 50%;
-  background-color: #ffffff; /* Opcjonalne tło koła */
-  border: 2px solid #422B6F; /* Obwódka */
-  padding: 3px;
-  object-fit: cover;
-}
 
 /* Zamiast rely on, override any problematic 'img' class size properties */
 img {
@@ -224,43 +130,6 @@ img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   gap: 1rem;
 }
-
-/* Znikają obie nawigacje i hanburger wyczyszczony */
-/*.md-sidebar__scrollwrap { 
-  display: none; 
-}*/
-
-/* Ukrywa lewą nawigację - znika hamburger*/
-/*.md-sidebar--primary {
-  display: none; 
-} */
-
-/* Ukrywa boczny pasek - nic się nie zmienia */
-/*.md-sidebar--secondary {
-  display: none; 
-}*/
-
-/* Usuwa margines po prawej stronie - nic się nie zmienia*/
-/*.md-main {
-  margin-right: 0; 
-}*/
-
-/*.md-content {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-}*/
-
-
-/*.md-main__inner.md-grid {
-  max-width: initial;
-}*/
-
-/* Maximum space for text block */
-/*.md-grid {
-  max-width: initial; 
-}*/
-/* or 100%, if you want to stretch to full-width */
 
 /* Ukryj boczne nawigacje na dużych ekranach */
 /* Ukryj boczne nawigacje i rozciągnij treść na dużych ekranach */
@@ -295,7 +164,7 @@ img {
 label.md-header__button.md-icon::before {
   content: '';
   display: inline-block;
-  background-image: url('assets/menu.png'); /* Wskaż swoją ikonę */
+  background-image: url('assets/menu1.png'); /* Wskaż swoją ikonę */
   background-size: contain;
   width: 24px;
   height: 24px;
@@ -309,7 +178,7 @@ label.md-header__button.md-icon svg {
 
 /* Wymuszenie białego tekstu na przycisku */
 .info-button {
-  background-color: #155B83; /* Ciemnoniebieski kolor przycisku */
+  background-color: #034A76; /* Ciemnoniebieski kolor przycisku */
   color: #FFFFFF !important; /* Wymuszenie białego tekstu */
   text-decoration: none; /* Usunięcie podkreślenia */
   padding: 15px 30px; /* Większe wewnętrzne odstępy */
@@ -372,6 +241,7 @@ label.md-header__button.md-icon svg {
 /* Tytuł wydarzenia */
 .event-title {
   font-size: 1.1em;
+  margin-bottom: 20px;
 }
 
 
@@ -388,7 +258,7 @@ label.md-header__button.md-icon svg {
 .about-title {
   text-align: center;
   font-size: 1.8em;
-  color: #2c84c9;
+  color: #034A76;
   margin-bottom: 10px;
   margin-top: 15px;
 }
@@ -435,7 +305,7 @@ label.md-header__button.md-icon svg {
 .topic-content h3 {
   margin: 0;
   font-size: 1.2em;
-  color: #2c84c9;
+  color: #034A76;
 }
 
 .topic-content p {
@@ -452,7 +322,7 @@ label.md-header__button.md-icon svg {
   max-width: 850px;
   margin: 0 auto;
   padding: 10px;
-  font-family: Poppins, sans-serif;
+  font-family: Barlow, sans-serif;
 }
 /* Sekcja dni */
 .agenda-days {
@@ -486,7 +356,7 @@ label.md-header__button.md-icon svg {
   display: block;
 }
 .agenda-schedule h3 {
-  color: #2c84c9;
+  color: #034A76;
   margin-bottom: 10px;
 }
 .event {
@@ -505,14 +375,14 @@ label.md-header__button.md-icon svg {
 }
 .event-title {
   color: #333;
-  margin-top: 10px;
+  margin-top: 2px;
   font-weight: bold;
-  margin-bottom: 15px;}
+  margin-bottom: 35px;}
 
 
 .language-switch {
     margin-left: auto; /* Umieszcza element maksymalnie na prawo */
-    background-color: #2c84c9;
+    background-color: #034A76;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -530,4 +400,77 @@ label.md-header__button.md-icon svg {
   display: none;
 }
 
+.about-text-call {
+  font-weight: bold;
+}
 
+.topic-content-class {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+    .info-button {
+        background-color: #034A76; /* Domyślny kolor */
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-size: 1.3em;
+        font-weight: bold;
+        display: inline-block;
+        transition: all 0.3s ease;
+        margin: 0 10px;
+    }
+
+    .info-button:hover {
+        background-color: #0D3E5C; /* Kolor przy hover */
+    }
+
+    /* Styl dla zablokowanego przycisku */
+    .info-button.disabled {
+        background-color: #cccccc; /* Szary kolor */
+        color: #666666; /* Przygaszony tekst */
+        cursor: not-allowed; /* Ikona zablokowania */
+        pointer-events: none; /* Wyłącza klikanie */
+    }
+
+    .info-button.disabled:hover {
+        background-color: #cccccc; /* Bez zmiany koloru przy hover */
+        color: #666666;
+    }
+
+
+    .map-container {
+        display: flex; /* Ustawia układ flexbox */
+        gap: 20px; /* Odstęp między mapą a zdjęciem */
+        align-items: center; /* Wyśrodkowanie elementów w pionie */
+        justify-content: center; /* Wyśrodkowanie całego kontenera */
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .map-container iframe {
+        flex: 1; /* Mapka zajmuje tyle miejsca, ile jest dostępne */
+        max-width: 600px; /* Maksymalna szerokość mapy */
+        height: 450px; /* Stała wysokość mapy */
+    }
+
+    .map-image {
+      flex: none; /* Wyłącza automatyczne dostosowywanie rozmiaru zdjęcia */
+      width: 450px; /* Szerokość zdjęcia */
+      height: auto; /* Zachowuje proporcje zdjęcia */
+      border-radius: 10px; /* Zaokrąglone rogi zdjęcia */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień */
+      object-fit: cover; /* Dopasowuje zdjęcie do kontenera */
+  }
+  
+
+.center-title {
+    text-align: center;
+    font-size: 40rem;
+}
+
+.location-container {
+  font-size: 1.2em;
+}
