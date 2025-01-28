@@ -428,14 +428,14 @@ label.md-header__button.md-icon svg {
 
     /* Styl dla zablokowanego przycisku */
 .info-button.disabled {
-        background-color: #cccccc; /* Szary kolor */
+        background-color: #2c84c9; /* Szary kolor */
         color: #666666; /* Przygaszony tekst */
-        cursor: not-allowed; /* Ikona zablokowania */
-        pointer-events: none; /* Wyłącza klikanie */
+        /*cursor: not-allowed; /* Ikona zablokowania */
+        /*pointer-events: none; /* Wyłącza klikanie */
 }
 
 .info-button.disabled:hover {
-        background-color: #cccccc; /* Bez zmiany koloru przy hover */
+        background-color: #1e5b89; /* Bez zmiany koloru przy hover */
         color: #666666;
 }
 
