@@ -482,12 +482,25 @@ label.md-header__button.md-icon svg {
 .logo-container {
   text-align: left;  /* Logo wyrównane maksymalnie do lewej */
   margin-top: -20px; /* Dopasowanie odstępu */
-  margin-bottom: 15px; /* Dystans nad sekcją lokalizacji */
+  margin-bottom: 10px; /* Dystans nad sekcją lokalizacji */
   padding-left: 20px; /* Odsunięcie od krawędzi ekranu */
 }
 
 .logo-container img {
-  width: 120px; /* Zmniejszenie szerokości */
+  width: 120px; /* Domyślny rozmiar logo */
   height: auto; /* Utrzymanie proporcji */
   display: inline-block;
+}
+
+/* 🔹 RESPONSYWNOŚĆ - Zmniejsz logo na mniejszych ekranach */
+@media (max-width: 768px) {
+  .logo-container img {
+      width: 90px; /* Mniejsze logo na tabletach */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container img {
+      width: 70px; /* Jeszcze mniejsze logo na telefonach */
+  }
 }
