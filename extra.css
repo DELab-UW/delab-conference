@@ -472,5 +472,22 @@ label.md-header__button.md-icon svg {
 }
 
 .location-container {
-  font-size: 1.2em;
+  font-size: 1.3em;
+}
+
+.location-icon {
+  margin-top: 20px;
+}
+
+.logo-container {
+  text-align: left;  /* Logo wyrównane maksymalnie do lewej */
+  margin-top: -20px; /* Dopasowanie odstępu */
+  margin-bottom: 15px; /* Dystans nad sekcją lokalizacji */
+  padding-left: 20px; /* Odsunięcie od krawędzi ekranu */
+}
+
+.logo-container img {
+  width: 120px; /* Zmniejszenie szerokości */
+  height: auto; /* Utrzymanie proporcji */
+  display: inline-block;
 }
