@@ -287,8 +287,8 @@
 <body>
     <div class="countdown-container">
         <div class="countdown-title">
-            <span class="lang-pl">Do zamknięcia call for presentations zostało:</span>
-            <span class="lang-en hidden">Countdown to the end of Call for Presentations:</span>
+            <span class="lang-pl">Do rozpoczęcia konferencji zostało:</span>
+            <span class="lang-en hidden">Countdown to the start of the conference:</span>
         </div>
         <!-- Timer liczb -->
         <div class="countdown-timer">
@@ -329,7 +329,7 @@
 <script>
         // Funkcja odliczania
         function countdown() {
-            const eventDate = new Date("February 23, 2025 23:59:59").getTime();
+            const eventDate = new Date("May 29, 2025 23:59:59").getTime();
             const now = new Date().getTime();
             const timeLeft = eventDate - now;
             const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
