@@ -39,8 +39,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -211,10 +211,13 @@
 
 <p><br></p>
 <!-- Nagłówek -->
-<h1 class="center-title">
+
+<div class="banner-background">
+  <h1 class="center-title1">
     <span class="lang-pl"><b>Weź udział w konferencji<br> i stań się częścią rewolucji AI <br>w nauce i edukacji!</b></span>
     <span class="lang-en hidden"><b>Join the conference<br> and be part of the AI revolution <br>in science and education!</b></span>
-</h1>
+  </h1>
+</div>
 
 <!-- Przycisk rejestracji-->
 <div class="info-button-container">
@@ -247,7 +250,7 @@
             background-color: #fff;
             color: grey;
             padding: 20px 20px;
-            font-family: Barlow;
+            font-family: Arial;
             border-radius: 5px;
             max-width: 600px;
             margin: 20px auto;
@@ -478,7 +481,7 @@
 <p><br></p>
 <!-- Agenda -->
 
-<h1 id="harmonogram" style="margin-top: 50px;">
+<h1 id="harmonogram" style="margin-top: 50px; font-weight: bold; font-size: 30px; margin-left: 10px;">
     <span class="lang-pl"><b>Harmonogram wydarzenia</b></span>
     <span class="lang-en hidden"><b>Event Schedule</b></span></h1>
 
@@ -558,7 +561,7 @@
                 </div>
                 <div class="event-right">
                     <p>
-                    <button onclick="openModal('panelModal2')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 20px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#e8f2fb'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
+                    <button onclick="openModal('panelModal2')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 20px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#bacde6'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
                     <span class="lang-pl">
                     <b><i>GenAI in Higher Education – some things we need to talk about</i> - prof. Neil Selwyn</b>
                     </span>
@@ -610,7 +613,7 @@
                 </div>
                 <div class="event-right">
                     <p>
-                    <button onclick="openModal('panelModal3')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 0px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#e8f2fb'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
+                    <button onclick="openModal('panelModal3')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 0px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#bacde6'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
                     <span class="lang-pl">
                     <b><i>The Fix or the Break: GenAI in Higher Education</i></b>
                     </span>
@@ -675,7 +678,7 @@
                 <div class="event-right" style="display: flex; flex-wrap: wrap; gap: 20px;">
                   <div class="event-topics" style="flex: 1 1 50%; min-width: 100px;">
                     <p>
-                    <button onclick="openModal('panelModal')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 20px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#e8f2fb'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
+                    <button onclick="openModal('panelModal')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 20px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#bacde6'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
                     <span class="lang-pl">
                     <b>Debata: <i>Jakiej uczelni chcemy w obliczu rozwoju AI?</i></b>
                     </span>
@@ -800,7 +803,7 @@
                 <div class="event-right" style="display: flex; flex-wrap: wrap; gap: 20px;">
                     <div class="event-topics" style="flex: 1 1 50%; min-width: 300px;">
                     <p>
-                    <button onclick="openModal('panelModal1')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 20px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#e8f2fb'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
+                    <button onclick="openModal('panelModal1')" style="all: unset; cursor: pointer;display: inline-flex;align-items: center;justify-content: center;border-radius: 6px;padding: 6px 12px;font-size: 16px;color: #404040;background-color: #f0f0f0;transition: background-color 0.3s, box-shadow 0.3s;margin-top: 1px; margin-right: 20px; margin-bottom: -10px;" onmouseover="this.style.backgroundColor='#bacde6'; this.style.boxShadow='0 2px 6px rgba(0,0,0,0.1)'"onmouseout="this.style.backgroundColor='#f0f0f0'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor='#f7f7f7'; this.style.boxShadow='none'">
                     <span class="lang-pl">
                     <b>Debata: <i>Jakiej strategii potrzebują uczelnie w dobie AI? Od wizji do działania</i></b>
                     </span>
@@ -1122,7 +1125,7 @@
 
             // Stylizacja przycisku Harmonogramu
             scheduleButton.style.marginRight = '10px';
-            scheduleButton.style.backgroundColor = '#f0f0f0';
+            scheduleButton.style.backgroundColor = '#bacde6';
             scheduleButton.style.color = '#333';
             scheduleButton.style.border = 'none';
             scheduleButton.style.padding = '8px 16px';
@@ -1147,7 +1150,7 @@
 
             // Stylizacja przycisku Prelegentów
             speakersButton.style.marginRight = '10px';
-            speakersButton.style.backgroundColor = '#f0f0f0';
+            speakersButton.style.backgroundColor = '#bacde6';
             speakersButton.style.color = '#333';
             speakersButton.style.border = 'none';
             speakersButton.style.padding = '8px 16px';
@@ -1172,7 +1175,7 @@
 
             // Stylizacja przycisku Lokalizacji
             locationButton.style.marginRight = '10px';
-            locationButton.style.backgroundColor = '#f0f0f0';
+            locationButton.style.backgroundColor = '#bacde6';
             locationButton.style.color = '#333';
             locationButton.style.border = 'none';
             locationButton.style.padding = '8px 16px';
@@ -1251,12 +1254,12 @@
 
 <p><br><br></p>
 <!-- Speakers -->
-<h1 id="speakers" style="margin-top: 50px; color: #034A76">
+<h1 id="speakers" style="margin-top: 50px; font-weight: bold; font-size: 30px; margin-left: 10px;">
     <span class="lang-pl"><b>Prelerenci</b></span>
     <span class="lang-en hidden"><b>Speakers</b></span>
 </h1>
 
-<div class="about-section">
+<div class="about-section2">
     <div class="topics-container">
         <div class="topic">
 
@@ -2273,7 +2276,7 @@
 </code></pre>
 <p><br><br></p>
 <!-- Call -->
-<h1 id="call" style="margin-top: 50px; color: #034A76">
+<h1 id="call" style="margin-top: 50px; font-weight: bold; font-size: 30px; margin-left: 10px;">
     <span class="lang-pl"><b>Call for presentations</b></span>
     <span class="lang-en hidden"><b>Call for presentations</b></span></h1>
 
@@ -2430,13 +2433,11 @@
 
 <p><br><br></p>
 <p><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></p>
-<div class="about-section">
-
-<h1 id="location" style="margin-bottom:10px; color: #034A76;">
+<h1 id="location" style="margin-top: 50px; font-weight: bold; font-size: 30px; margin-left: 10px;">
     <span class="lang-pl"><b>Szczegóły lokalizacji</b></span>
     <span class="lang-en hidden"><b>Location details</b></span></h1>
 
-<div class="about-section">
+<div class="about-section1">
 <!-- Nagłówek sekcji -->
 <div class="topic-content-class">
     <div class="topic">
