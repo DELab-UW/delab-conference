@@ -572,3 +572,22 @@ label.md-header__button.md-icon svg {
   margin-bottom: 4px;
   margin-top: 5px;
 }
+
+
+  .report-link {
+    color: #034A76;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: 1px solid #034A76;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .report-link:hover {
+    background-color: #3058712f;
+    color: #fff;
+    text-decoration: none;
+  }
+
