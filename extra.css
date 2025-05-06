@@ -550,4 +550,25 @@ label.md-header__button.md-icon svg {
   font-size: 2em;
   color: white !important;
   line-height: 1.4;
+  font-weight: bold !important;
+  font-family: Open Sans !important;
+}
+
+.event-heading {
+  font-size: 1em;
+  color: #034A76;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  vertical-align: top;
+  margin-top: -14px;     /* Wyrównanie do góry */
+}
+
+.track-title {
+  font-size: 1em;
+  color: #034A76;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 5px;
 }
