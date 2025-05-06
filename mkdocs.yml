@@ -21,14 +21,14 @@ theme:
     - navigation.tabs.sticky
     - toc.integrate
   
-  language: pl 
+  language: en
 
   palette:
     scheme: delab
     accent: blue
   
   font:
-    text: Barlow
+    text: Open Sans
   
   hide:
     - toc
