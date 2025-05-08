@@ -245,49 +245,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
-    <style>
-        /* Stylizacja sekcji odliczania */
-        .countdown-container {
-            text-align: center;
-            background-color: #fff;
-            color: grey;
-            padding: 20px 20px;
-            font-family: Open Sans;
-            border-radius: 5px;
-            max-width: 600px;
-            margin: 20px auto;
-        }
-        .countdown-title {
-            font-size: 1.7em;
-            margin-bottom: 10px;
-            margin-top: 20px;
-        }
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .countdown-timer div {
-            text-align: center;
-        }
-        .countdown-timer span {
-            display: block;
-            font-size: 2em;
-            color: #034A76; /* Akcent - czerwony */
-        }
-        .countdown-labels {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-left: 45px;
-            margin-top: 10px;
-            font-size: 1em;
-            text-transform: uppercase;
-            color: #BFBFBF;
-        }
-    </style>
 </head>
 <body>
     <div class="countdown-container">
@@ -359,36 +316,6 @@
     </script>
 </body>
 </html>
-
-<style>
-/* Stylowanie kontenera dla przycisku */
-.info-button-container {
-    text-align: center; /* Wyśrodkowanie przycisku */
-    margin-top: 30px; /* Dodanie większej przestrzeni nad przyciskiem */
-}
-
-/* Stylowanie przycisku */
-.info-button {
-    background-color: #034A76; /* Ciemnoniebieski kolor przycisku */
-    color: #FFFFFF; /* Biały tekst */
-    text-decoration: none; /* Usunięcie podkreślenia */
-    padding: 15px 30px; /* Większe wewnętrzne odstępy */
-    border-radius: 50px; /* Mocno zaokrąglone rogi */
-    font-size: 1.3em; /* Większy rozmiar tekstu */
-    font-weight: bold; /* Pogrubienie tekstu */
-    display: inline-block; /* Blokowy styl dla stylizacji */
-    transition: all 0.3s ease; /* Płynna animacja na hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień */
-}
-
-/* Efekt hover na przycisku */
-.info-button:hover {
-    background-color: #0D3E5C; /* Jeszcze ciemniejszy niebieski przy najechaniu */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Większy cień przy hover */
-    transform: translateY(-2px); /* Subtelne uniesienie przycisku */
-    color: #FFFFFF; /* Utrzymanie białego tekstu */
-}
-</style>
 
 <p><br></p>
 <!-- Opis -->
@@ -492,11 +419,12 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
   <br>
   <b>Discussions will take place along two parallel tracks:</b><br><br>
 
-  <b>University of Warsaw Community Track</b> – this track will begin on May 29 at 2:00 PM with a panel presenting student proposals developed the previous day. The debates in this part of the conference will focus on the future of the university, strategies for the development of higher education, and practical challenges related to implementing AI technologies at the University of Warsaw.<br><br>
+<b>University of Warsaw Community Track</b> – this track will begin on May 29 at 2:00 PM with a panel presenting student proposals developed the previous day. The debates in this part of the conference will focus on the future of the university, strategies for the development of higher education, and practical challenges related to implementing AI technologies at the University of Warsaw.<br><br>
 
-  <b>Scientific Track (International)</b> – dedicated to researchers and educators from around the world. Over the course of two days, the latest research findings and projects on the use of generative AI in education and science will be presented. Among the invited speakers is Prof. Peter Kahn from the University of Manchester, along with many other distinguished experts.<br><br>
+<b>Scientific Track (International)</b> – dedicated to researchers and educators from around the world. Over the course of two days, the latest research findings and projects on the use of generative AI in education and science will be presented. Among the invited speakers is Prof. Peter Kahn from the University of Manchester, along with many other distinguished experts.<br><br>
 
-  We warmly invite all members of the University of Warsaw academic community to actively participate in the conference. Let us reflect together on what university education should be today – open to technological challenges, socially responsible, and rooted in academic values.
+We warmly invite all members of the University of Warsaw academic community to actively participate in the conference. Let us reflect together on what university education should be today – open to technological challenges, socially responsible, and rooted in academic values.
+
 </div>
 </div>
 
@@ -508,12 +436,12 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     <p class="lang-pl" style="margin: 0;">
       <strong>Zachęcamy do zapoznania się z raportem zespołu DELab UW na temat generatywnej AI.</strong><br>
       W raporcie prezentujemy zbiór dobrych praktyk opartych na przeglądzie literatury, wytycznych UW i innych uczelni, wynikach badania społeczności UW oraz doświadczeniu zespołu z narzędziami generatywnej AI.<br>
-      👉 <a href="https://delab-uw.github.io/genai_site/" target="_blank" class="report-link">Przeczytaj raport</a>
+      <a href="https://delab-uw.github.io/genai_site/" target="_blank" class="report-link">Przeczytaj raport</a>
     </p>
     <p class="lang-en hidden" style="margin: 0;">
       <strong>We invite you to read the DELab UW report on generative AI.</strong><br>
       This report presents a collection of good practices based on literature review, guidelines from UW and other universities, insights from the UW community, and the team's hands-on experience with generative AI tools.<br>
-      👉 <a href="https://delab-uw.github.io/genai_site_en/" target="_blank" class="report-link"">Read the report</a>
+      <a href="https://delab-uw.github.io/genai_site_en/" target="_blank" class="report-link"">Read the report</a>
     </p>
   </div>
 </div>
@@ -521,9 +449,16 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
 <p><br></p>
 <!-- Agenda -->
 
-<h1 id="harmonogram" style="margin-top: 50px; font-weight: bold; font-size: 30px; margin-left: 10px;">
+<h1 id="harmonogram" style="margin-top: 50px; font-weight: bold; font-size: 30px; margin-left: 10px; margin-bottom: 30px;">
     <span class="lang-pl"><b>Harmonogram wydarzenia</b></span>
     <span class="lang-en hidden"><b>Event Schedule</b></span></h1>
+
+<p class="lang-pl" style="margin-left: 10px; margin-top: -10px; font-size: 1em; color: #555;">
+Powyżej przedstawiono skrócony harmonogram sesji konferencyjnych. Poniżej znajduje się pełny plan konferencji w formie tabeli – zawierający szczegółowe informacje o prelegentach, tytułach wystąpień i podziale na ścieżki.
+</p>
+<p class="lang-en hidden" style="margin-left: 10px; margin-top: -10px; font-size: 1em; color: #555;">
+The session schedule above provides a simplified overview. Below, you will find the full conference programme in a table format – including detailed speaker names, talk titles, and thematic tracks.
+</p>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -1269,6 +1204,26 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
         <span class="lang-en hidden"><b>Live Streaming on channel: </b></span><a href="https://www.youtube.com/@delab-uw" target="_blank" style="color: #2c84c9; text-decoration: none;">https://www.youtube.com/@delab-uw</a></li>
     </ul>
 </div>
+
+<!-- Sekcja osadzonego harmonogramu -->
+<div style="background-color: #f7f7f7; padding: 30px; margin-top: 30px; border-radius: 10px;">
+  <p style="margin-bottom: 20px; font-size: 1em;">
+    <span class="lang-pl">
+      Skrócony harmonogram sesji znajdziesz powyżej. Poniżej prezentujemy szczegółowy plan konferencji – z pełnymi opisami wystąpień, nazwiskami prelegentów oraz podziałem na ścieżki tematyczne. Zachęcamy do zapoznania się!
+    </span>
+    <span class="lang-en hidden">
+      A simplified session schedule is shown above. Below, you can explore the full conference programme – including session descriptions, speaker names, and track divisions. We invite you to take a closer look!
+    </span>
+  </p>
+
+  <div style="overflow-x: auto;">
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-GPI-7OUdb-239TH7Zug79WDU-6s9aPqxOXJ_CXvSzebR1mPyRyiCucN_56Y58AmNz1Hm-GZYrGOy/pubhtml?widget=true&amp;headers=false"
+      style="width: 100%; height: 600px; border: none; border-radius: 8px;">
+    </iframe>
+  </div>
+</div>
+
 <script>
   function openModal(id) {
     document.getElementById(id).style.display = 'block';
@@ -1436,91 +1391,6 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
 <div class="about-section2">
     <div class="topics-container">
         <div class="topic">
-
-
-
-
-<!-- Styl sekcji -->
-<style>
-  .speakers-section {
-    padding: 40px 20px;
-    background-color: #fff;
-  }
-
-  .speakers-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .speaker-card {
-    flex: 0 0 290px;
-    text-align: center;
-    cursor: pointer;
-}
-
-
-
-  .speaker-photo {
-    width: 290px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid #ccc;
-    transition: transform 0.3s;
-  }
-
-  .speaker-photo:hover {
-    transform: scale(1.05);
-  }
-
-  .speaker-name {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #034A76;
-  }
-
-  .speaker-role {
-    font-size: 14px;
-    color: #555;
-  }
-
-  /* Modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.6);
-  }
-
-  .modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 6px;
-    position: relative;
-  }
-
-  .close-modal {
-    color: #aaa;
-    position: absolute;
-    top: 10px; right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-</style>
-
-
-
 
 <!-- Sekcja: Prelegenci -->
 
@@ -1820,9 +1690,14 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
       <div class="speaker-name">Dr Katarzyna Abramczuk</div>
     <div class="speaker-role">Faculty of Sociology, University of Warsaw</div>
     </div>
+    <!-- Prelegent 49 -->
+    <div class="speaker-card" onclick="openModal('modal49')">
+      <img src="./assets/jr.png" alt="Speaker Photo" class="speaker-photo">
+      <div class="speaker-name">Dr Juergen Rudolph</div>
+    <div class="speaker-role">Murdoch University</div>
+    </div>
   </div>
 </div>
-
 
 <!-- Modal - bio prelegenta -->
 <div id="modal1" class="modal">
@@ -1895,7 +1770,7 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     <span class="close-modal" onclick="closeModal('modal6')">&times;</span>
     <h3><b>Assoc. Prof. Tymoteusz Doligalski, SGH Warsaw School of Economics</b></h3>
     <p>
-    Tymoteusz Doligalski, Research and Teaching Fellow in the e-Business Unit at SGH Warsaw School of Economics. He researches the functioning of online companies, especially platforms, from the perspective of business models and AI. Deputy director of the AI Lab at SGH. He publishes research notes on the blog: https://www.doligalski.net/
+    Tymoteusz Doligalski, Research and Teaching Fellow in the e-Business Unit at SGH Warsaw School of Economics. He researches the functioning of online companies, especially platforms, from the perspective of business models and AI. Deputy director of the AI Lab at SGH. He publishes research notes on the blog: <a href="https://www.doligalski.net/" target="_blank">https://www.doligalski.net/</a>
     <br> 
     <br><b>Title of presentation:</b> <br>
     <i>GenAI as a Research Partner</i>
@@ -1955,7 +1830,7 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     <h3><b>Prof. Joanna Paliszkiewicz, Warsaw University of Life Sciences</b></h3>
     <p>
     Joanna Paliszkiewicz is a Full Professor at the Warsaw University of Life Sciences (WULS—SGGW), where she serves as the Director of the Management Institute. She is also a professor at the University of Economics in Ho Chi Minh City, Vietnam, and an adjunct professor at the University of Vaasa, Finland. She obtained her full professorship title from the International School for Social and Business Studies in Slovenia. A recognized expert in knowledge and trust management, she has published over 250 papers and is the author/co-author/editor of 23 books. She has received multiple research fellowships in the United States, Ireland, Slovakia, Taiwan, the UK, and Hungary. She is an active speaker at international conferences and serves as Deputy Editor-in-Chief of Management and Production Engineering Review and Associate Editor for Journal of Computer Information Systems, Expert Systems with Applications, Issues in Information Systems, Przegląd Organizacji, and Intelligent Systems with Applications. As President of the International Association for Computer Information Systems (IACIS) in the U.S., she organizes international conferences. She has successfully supervised Ph.D. students worldwide and has served as an external reviewer for doctoral programs in Poland, India, and Finland. She was awarded the Computer Educator of the Year (2013) by IACIS in the U.S. and is an expert for the Polish Accreditation Commission and a member of the Polish Academy of Science.
-    Internet page: https://paliszkiewicz.pl<br>
+    Internet page: <a href="https://paliszkiewicz.pl" target="_blank">https://paliszkiewicz.pl</a><br>
     <br><b>Title of presentation:</b> <br>
     <i>Artificial Intelligence In Education and Research – Transforming Teaching, Learning, and Research Practices</i>
     </p>
@@ -2039,7 +1914,7 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     <p>
     Przemysław Tomczyk, PhD in economics in the field of management sciences. He defended his PhD thesis at the Warsaw School of Economics in 2015. Assistant professor at the Department of Marketing at Kozminski University.
     He specializes in the role of artificial intelligence in scientific writing and science automation. Author of several dozen scientific publications and the YouTube channel "dr Przemek Tomczyk AI".
-    https://www.youtube.com/@drprzemek
+    <a href="https://www.youtube.com/@drprzemek" target="_blank">https://www.youtube.com/@drprzemek</a>
     Teaches how to write scientifically more ethical, faster and better using artificial intelligence.
     <br>
     <br><b>Title of presentation:</b> <br>
@@ -2266,7 +2141,7 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     <p>
     I have been teaching Chinese in Poland as a native speaker more than 15 year. I have been teaching Chinese language courses in SWPS  University since 2008. Through my contacts in the Chinese academic community in mainland and Taiwan, I assisted  numerous Polish students to obtain scholarships in Taiwan and mainland China. I am determined to introduce Polish  university students to various aspects of Chinese tradition and culture. I am currently working on a series of research articles related to the Chinese Internet language, communication and social media. I have published two scientific papers  in Taiwan and Poland. My research interests include:(1) intercultural communication and managment in Chinese societies;(2) development of  the Internet lexicon in China ; (3) social capital and internet communication in China; (4)internet words and phrases  adapted from mainland China in Taiwan; (5) online Chinese teaching and learning in the unversity with the application of AI  and  ChatGPT.
     <br>1.Journal Article: Online Chinese Teaching During the Pandemic—A Case Study of SWPS University in  Poland"疫情下的線上華語教學—以波蘭人文(SWPS)大學為例”, "pp. 171-178, Chinese World, Issue 131, June  2023.
-    <br>2.Scentific Report for Institute of New Europe (Think Tank ) ：The Rise of Chinese Internet Language :  Internet Lexicon and Social Media, 2022. http:// ine.org.pl/en/the-rise-of-chinese-internet-language internet-lexicon-and-social-media/
+    <br>2.Scentific Report for Institute of New Europe (Think Tank ) ：The Rise of Chinese Internet Language :  Internet Lexicon and Social Media, 2022. <a href="http:// ine.org.pl/en/the-rise-of-chinese-internet-language internet-lexicon-and-social-media/" target="_blank">http:// ine.org.pl/en/the-rise-of-chinese-internet-language internet-lexicon-and-social-media/</a>
     <br>3.Journal Article:“Language Change in Progress: Chinese Internet Lexicon and the Symbolic Meaning in the Harmonious  Society”, p.132-145, Nowa Polityka Wschodnia nr 4 (27), 2020.
     <br>4.Journal Article:Dynamic Cultural Impact and Computer Assisted Language Learning (CALL) for Second Language  Acquisition (SLA)”, p. 107-111, China : Language –Culture – Business, Warsaw 2013.
     <br>5.Article in the book : “The influence of Neo-Confucianism on moral education : a comparative case study between  Mainland China and Taiwan”, China past and present”, Warsaw University Press, pp.158-169, Warsaw 2010.
@@ -2430,14 +2305,26 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     <span class="close-modal" onclick="closeModal('modal50')">&times;</span>
     <h3><b>Dr Katarzyna Abramczuk, Faculty of Sociology, University of Warsaw</b></h3>
     <p>
-    Katarzyna Abramczuk is an assistant professor at the Faculty of Sociology at the University of Warsaw and a researcher at the Laboratory of Interactive Technologies at the National Information Processing Institute. Her research lies at the intersection of sociology, mathematical modelling of social phenomena, cognitive psychology, behavioural economics, and new technologies. She is also engaged in educational projects related to these fields---most recently ACTISS (https://actiss-edu.eu/) and ACTIPLEX (https://socialpolarisation.eu/)
+    Katarzyna Abramczuk is an assistant professor at the Faculty of Sociology at the University of Warsaw and a researcher at the Laboratory of Interactive Technologies at the National Information Processing Institute. Her research lies at the intersection of sociology, mathematical modelling of social phenomena, cognitive psychology, behavioural economics, and new technologies. She is also engaged in educational projects related to these fields---most recently ACTISS (<a href="https://actiss-edu.eu/" target="_blank">https://actiss-edu.eu/</a>) and ACTIPLEX (<a href="https://socialpolarisation.eu/" target="_blank">https://socialpolarisation.eu/</a>)
     <br><b>Title of presentation:</b> <br>
     <i>How Creating MOOCs Helped us Become Better Teachers: the Case for Integrating New Technologies in Everyday Educational Practices</i>
     </p>
   </div>
 </div>
-
-
+<div id="modal49" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal('modal49')">&times;</span>
+    <h3><b>Dr Juergen Rudolph, Murdoch University</b></h3>
+    <p>
+    Accomplished academic with 30 years of experience in higher education, specialising in teaching, research, and journal editorship. Experienced in conference leadership and teacher training.<br>
+    Highly experienced lecturer at postgraduate and undergraduate levels, well-versed in business and education subjects (e.g. Academic Writing, Critical AI literacy, Entrepreneurship and Innovation, International Business and Management, Organisational Behaviour, Research Methods, Sustainability Management, Teaching and Learning); consistently high student evaluations and passing rates.<br>
+    As editor-in-chief of the Journal of Applied Learning & Teaching (JALT), I elevated the journal to a Scopus Q1 ranking (top 5% globally in education): <a href="https://www.scopus.com/sourceid/21101093540" target="_blank">https://www.scopus.com/sourceid/21101093540</a>
+    Recognised for impactful research on AI in higher education, crisis leadership, and teaching practices, with over 6,500 citations, an h-index of 20, and an i10-index of 31. Proven expertise in developing academic frameworks, spearheading international symposia, and fostering global collaborations. Holds four postgraduate degrees: PhD, MBA, M.Ed., and M.A.
+    <br><b>Title of presentation:</b> <br>
+    <i>Don’t believe the hype. AI myths and the need for a critical approach in higher education</i>
+    </p>
+  </div>
+</div>
 
 <!-- Skrypt modala -->
 <script>
@@ -2458,12 +2345,12 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     });
   };
 </script>
+
         </div>
     </div>
+
 </div>
 
-<pre><code>
-</code></pre>
 <p><br><br></p>
 <!-- Call -->
 <h1 id="call" style="margin-top: 50px; font-weight: bold; font-size: 30px; margin-left: 10px;">
@@ -2647,7 +2534,6 @@ Serdecznie zapraszamy wszystkich członków społeczności akademickiej Uniwersy
     <!-- Mapka -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.0606552367494!2d21.023453166131585!3d52.24228192515387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecde67488c39f%3A0xf68db960a58fd4eb!2sDobra%2055%2C%2000-312%20Warszawa!5e0!3m2!1sen!2spl!4v1737108036372!5m2!1sen!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
