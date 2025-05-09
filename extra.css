@@ -753,3 +753,9 @@ label.md-header__button.md-icon svg {
   font-size: 24px;
   cursor: pointer;
 }
+
+#userwayAccessibilityWidget {
+  bottom: 100px;
+  top: auto;
+  position: absolute;
+}
