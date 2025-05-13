@@ -765,3 +765,29 @@ label.md-header__button.md-icon svg {
   justify-content: flex-start !important;
   gap: 10px;
 }
+
+.logo-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+/* Domyślne (duże ekrany) */
+.logo-fa { max-height: 40px; width: auto; }
+.logo-m { max-height: 40px; width: auto; }
+.logo-wne { max-height: 40px }
+.logo-wpia { max-height: 60px; width: auto; }
+.logo-wsoc { max-height: 40px; width: auto; }
+.logo-wzarz { max-height: 40px; width: auto; }
+
+/* Na małych ekranach (do 600px) */
+@media (max-width: 600px) {
+  .logo-fa { max-height: 20px; }
+  .logo-m { max-height: 24px; }
+  .logo-wne { max-height: 24px; }
+  .logo-wpia { max-height: 36px; }
+  .logo-wsoc { max-height: 24px; }
+  .logo-wzarz { max-height: 24px; }
+}
