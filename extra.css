@@ -248,7 +248,7 @@ label.md-header__button.md-icon svg {
 
 /* Jasnoszare tło */
 .about-section {
-  background-image: url('./assets/ramka2.png'); /* Upewnij się, że ścieżka jest poprawna */
+  background-image: url('./assets/drugi.jpg'); /* Upewnij się, że ścieżka jest poprawna */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -534,7 +534,7 @@ label.md-header__button.md-icon svg {
 }
 
 .banner-background {
-  background-image: url('./assets/ramka.png');
+  background-image: url('./assets/pierwszy.jpg');
   background-size: cover;
   background-position: center;
   padding: 60px 20px;
